@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="ezzar" translate="label" sortOrder="900">
+            <label>Ezzar</label>
+        </tab>
+        <section id="ezzar_deliverycost" translate="label" sortOrder="10"
+                 showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Delivery Rates</label>
+            <tab>ezzar</tab>
+            <resource>Ezzar_DeliveryCost::config</resource>
+
+            <group id="general" translate="label" sortOrder="10"
+                   showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Flat Rate Overrides</label>
+
+                <field id="rates" translate="label" sortOrder="10"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Rates</label>
+                    <frontend_model>Ezzar\DeliveryCost\Block\Adminhtml\System\Config\Form\Field\Rates</frontend_model>
+                    <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
+                    <comment>Add rows for each delivery_charge option and set the shipping rate.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
