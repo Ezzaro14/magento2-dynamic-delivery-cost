@@ -1,6 +1,8 @@
 # Ezzar Delivery Cost
 
 `Ezzar_DeliveryCost` overrides Magento's Flat Rate shipping price with the highest configured delivery charge found among the products in the cart.
+<img width="1106" height="419" alt="image" src="https://github.com/user-attachments/assets/a1688a05-ccff-405d-a62f-fea96df14cd7" />
+<img width="383" height="111" alt="image" src="https://github.com/user-attachments/assets/57eaa193-cfe4-4908-9bfc-502c3d06e512" />
 
 ## Requirements
 
